@@ -1,6 +1,8 @@
 # ¡Mi lista de Gatos en Remix!
+![Gatos](https://github.com/user-attachments/assets/57030984-72ef-4dce-8f4f-f721649a1d39)
 
 - [Remix Docs](https://remix.run/docs)
+
 
 ## Development
 
@@ -28,11 +30,15 @@ npm start
 
 Now you'll need to pick a host to deploy it to.
 
-### DIY
+## Importante
+**Links**: Los enlaces en Remix se crean con el componente <Link> para navegación interna, lo que permite transiciones rápidas entre páginas sin recargar el navegador.
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+**Loaders**: Son funciones que obtienen los datos necesarios para una página o componente antes de que se renderice, facilitando el renderizado basado en datos en el servidor o cliente.
 
-Make sure to deploy the output of `remix build`
+**Rutas dinámicas**: Son rutas que incluyen segmentos variables (e.g., /productos/:id), permitiendo manejar páginas únicas según parámetros específicos.
 
-- `build/server`
-- `build/client`
+**Rutas anidadas**: Remix permite definir rutas dentro de otras rutas, creando una jerarquía que comparte layouts y lógica entre secciones relacionadas de la aplicación.
+
+**Componente Outlet**: Es un marcador de posición para renderizar las rutas anidadas dentro del layout principal, permitiendo que se integren sin duplicar estructuras.
+
+
