@@ -1,34 +1,37 @@
 # ¡Mi lista de Gatos en Remix!
 ![Gatos](https://github.com/user-attachments/assets/57030984-72ef-4dce-8f4f-f721649a1d39)
 
-- [Remix Docs](https://remix.run/docs)
+- [Documentación Remix](https://remix.run/docs)
 
 
-## Development
+## Desarrollo
 
-From your terminal:
+Desde tu terminal:
 
 ```sh
 npm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+Esto inicia su aplicación en modo de desarrollo, reconstruyendo activos ante cambios en archivos.
+.
 
-## Deployment
+## Despliegue
 
-First, build your app for production:
+Primero, crea tu aplicación para producción::
 
 ```sh
 npm run build
 ```
 
-Then run the app in production mode:
+Luego ejecute la aplicación en modo de producción:
+
 
 ```sh
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+Ahora tendrás que elegir un host donde implementarlo.
+
 
 ## Importante
 **Links**: Los enlaces en Remix se crean con el componente <Link> para navegación interna, lo que permite transiciones rápidas entre páginas sin recargar el navegador.
