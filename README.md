@@ -4,7 +4,7 @@
 - [Documentación Remix](https://remix.run/docs)
 
 
-## Desarrollo
+## Ejecución
 
 Desde tu terminal:
 
