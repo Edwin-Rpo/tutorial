@@ -7,23 +7,18 @@ import type { ContactRecord } from "../data";
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import invariant from "tiny-invariant";
 
-export const loader = async ({
-    params,
-}: LoaderFunctionArgs) => {
+export const loader = async ({ params }: LoaderFunctionArgs) => {
     invariant(params.contactId, "Missing contactId param");
     const contact = await getContact(params.contactId);
+
     if (!contact) {
-        throw new Response("Not Found", { status: 404 });
+        throw new Response("Item not Found", { status: 404 });
     }
-    return json({ contact });
+    return json({ contact })
 };
-
-
-
 
 export default function Contact() {
     const { contact } = useLoaderData<typeof loader>();
-
 
     return (
         <div id="contact">
@@ -106,3 +101,4 @@ const Favorite: FunctionComponent<{
         </Form>
     );
 };
+
